@@ -3,6 +3,7 @@ import DeleteAllUSer from "./DeleteAllUSer";
 import { fakeUSerData } from "../api";
 import { useDispatch } from "react-redux";
 import { addUser } from "../store/slices/UserSlice";
+import DisplayUsers from "./DisplayUsers";
 
 
 const UserDetails = () => {
@@ -29,9 +30,9 @@ const UserDetails = () => {
           </button>
         </div>
         <ul>
-          {/* <li>Hi</li>
-            <li>Hii</li> */}
+          <DisplayUsers/>
         </ul>
+        <hr/>
         <DeleteAllUSer />
       </div>
     </>
